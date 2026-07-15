@@ -1,6 +1,6 @@
-# KOROKOCO — korokoco.com
+# KOROKOCO — polloskokoroco.com
 
-Landing page para la dark kitchen **KOROKOCO**. Sitio 100 % estático (HTML + CSS + JS vanilla, sin build step), hosteado en **GitHub Pages**.
+Landing page para la dark kitchen **KOROKOCO** (pollo al horno, comida casera saludable). Sitio 100 % estático (HTML + CSS + JS vanilla, sin build step), hosteado en **GitHub Pages**. En vivo: https://polloskokoroco.com/
 
 ## Arquitectura
 
@@ -41,13 +41,11 @@ python3 -m http.server 8000
 
 Cada push a `main` publica automáticamente vía GitHub Pages (Settings → Pages → branch `main`, carpeta `/`).
 
-### Dominio korokoco.com
+### Dominio polloskokoroco.com
 
-Cuando el dominio esté listo:
+Ya configurado: el archivo [`CNAME`](CNAME) apunta a `polloskokoroco.com`, el DNS resuelve a las IPs de GitHub Pages y HTTPS está activo. El sitio está en vivo en https://polloskokoroco.com/.
 
-1. En el registrador, apunta un registro `CNAME` de `www` a `priormyt.github.io` y registros `A` de la raíz a las IPs de GitHub Pages ([docs](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)).
-2. En GitHub: Settings → Pages → Custom domain → `korokoco.com` (esto crea el archivo `CNAME` en el repo).
-3. Activa **Enforce HTTPS**.
+Si en el futuro se cambia el dominio, actualiza el `CNAME` (Settings → Pages → Custom domain) y las referencias internas en `index.html` (`og:url`, `og:image`, `schema.org`, correo de contacto).
 
 ## Pendientes de contenido
 
