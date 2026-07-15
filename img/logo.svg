@@ -1,8 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 64" role="img" aria-label="KOROKOCO">
-  <!-- LOGO PLACEHOLDER — reemplazar este archivo por el logo final
-       manteniendo el mismo nombre (logo.svg) para no tocar código. -->
-  <circle cx="32" cy="32" r="26" fill="#e4572e"/>
-  <path d="M32 14c-3 0-4 3-2 5-4 1-7 5-7 10 0 7 5 12 9 17h0c4-5 9-10 9-17 0-5-3-9-7-10 2-2 1-5-2-5z" fill="#fff8f0"/>
-  <circle cx="32" cy="30" r="2.5" fill="#e4572e"/>
-  <text x="72" y="43" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="30" letter-spacing="2" fill="currentColor" style="fill:#1d1a17">KOROKOCO</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 272 40" role="img" aria-label="KOROKOCO">
+  <!-- LOGO PLACEHOLDER — minimalista, negro con punto amarillo tipo acento.
+       Reemplazar este archivo por el logo final manteniendo el mismo
+       nombre (logo.svg) para no tocar código. -->
+  <text x="0" y="31" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="30" letter-spacing="1.5" fill="#111111">KOROKOCO</text>
+  <circle cx="262" cy="28" r="6" fill="#f5d90a"/>
 </svg>

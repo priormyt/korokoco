@@ -1,6 +1,6 @@
 // KOROKOCO — interacciones mínimas. Sin dependencias.
 
-// Menú móvil
+// ----- Menú móvil -----
 const toggle = document.querySelector(".nav-toggle");
 const links = document.getElementById("nav-links");
 
@@ -17,5 +17,19 @@ links.addEventListener("click", (e) => {
   }
 });
 
-// Año dinámico en el footer
+// ----- Carrusel de platillos: botones ← → -----
+const track = document.getElementById("carousel-track");
+const carousel = track ? track.parentElement : null;
+
+document.querySelectorAll(".carousel-btn").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    if (!carousel) return;
+    const card = track.querySelector(".dish");
+    // Avanza el ancho de una tarjeta + gap (1.5rem = 24px)
+    const step = card ? card.offsetWidth + 24 : carousel.clientWidth * 0.8;
+    carousel.scrollBy({ left: step * Number(btn.dataset.dir), behavior: "smooth" });
+  });
+});
+
+// ----- Año dinámico en el footer -----
 document.getElementById("year").textContent = new Date().getFullYear();

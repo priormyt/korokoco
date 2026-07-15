@@ -4,12 +4,12 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>KOROKOCO — Dark Kitchen · Pollo rostizado a domicilio</title>
-  <meta name="description" content="KOROKOCO es una dark kitchen de pollo rostizado y comida para llevar. Pide por WhatsApp, Uber Eats, Rappi o DiDi Food." />
+  <title>KOROKOCO — Comida real, rostizada. Dark kitchen saludable</title>
+  <meta name="description" content="KOROKOCO es una dark kitchen de pollo rostizado y comida real: ingredientes frescos, macros y calorías a la vista. Pide por WhatsApp, Uber Eats, Rappi o DiDi Food." />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="KOROKOCO — Dark Kitchen" />
-  <meta property="og:description" content="Pollo rostizado y comida para llevar, directo a tu puerta." />
+  <meta property="og:title" content="KOROKOCO — Comida real, rostizada" />
+  <meta property="og:description" content="Comida saludable para llevar: ingredientes frescos, macros claros, directo a tu puerta." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://korokoco.com" />
   <meta property="og:image" content="https://korokoco.com/img/og-image.png" />
@@ -33,7 +33,7 @@
     "@type": "Restaurant",
     "name": "KOROKOCO",
     "url": "https://korokoco.com",
-    "servesCuisine": "Pollo rostizado",
+    "servesCuisine": "Comida saludable, pollo rostizado",
     "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
@@ -54,9 +54,9 @@
       <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menú">☰</button>
       <ul class="nav-links" id="nav-links">
         <li><a href="#menu">Menú</a></li>
+        <li><a href="#ingredientes">Ingredientes</a></li>
         <li><a href="#pedir">Cómo pedir</a></li>
-        <li><a href="#info">Zona y horarios</a></li>
-        <li><a class="btn btn-primary" href="https://wa.me/5215500000000" target="_blank" rel="noopener">Pedir ahora</a></li>
+        <li><a class="btn btn-accent" href="https://wa.me/5215500000000" target="_blank" rel="noopener">Pedir ahora</a></li>
       </ul>
     </nav>
   </header>
@@ -66,90 +66,194 @@
     <!-- ===================== HERO ===================== -->
     <section class="hero">
       <div class="container">
-        <h1>Pollo rostizado,<br /><em>directo a tu puerta</em></h1>
-        <p>Somos una dark kitchen: cero mesas, cero filas. Solo pollo al carbón, guarniciones caseras y entrega rápida en tu zona.</p>
+        <p class="eyebrow">Dark kitchen · Comida real</p>
+        <h1>Comida <span class="mark">real</span>,<br />rostizada al carbón.</h1>
+        <p class="hero-lede">Ingredientes frescos, porciones honestas y cada macro a la vista. Sin humo, sin culpa — directo a tu puerta.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="https://wa.me/5215500000000" target="_blank" rel="noopener">Pedir por WhatsApp</a>
-          <a class="btn btn-ghost" href="#menu">Ver menú</a>
+          <a class="btn btn-dark" href="#menu">Ver el menú</a>
+          <a class="btn btn-line" href="https://wa.me/5215500000000" target="_blank" rel="noopener">Pedir por WhatsApp</a>
         </div>
       </div>
     </section>
 
-    <!-- ===================== MENÚ ===================== -->
-    <section id="menu">
-      <div class="container">
-        <h2 class="section-title">El menú</h2>
-        <p class="section-intro">Pocas cosas, bien hechas. Menú placeholder — reemplazar con platillos y fotos reales.</p>
-        <div class="menu-grid">
-          <article class="menu-card">
-            <div class="menu-card-img" role="img" aria-label="Foto pendiente">[ foto del platillo ]</div>
-            <div class="menu-card-body">
-              <h3>Pollo entero rostizado</h3>
-              <p>Marinado 24 h, al carbón, con tortillas hechas a mano y dos salsas.</p>
-              <span class="price">$249</span>
-            </div>
-          </article>
-          <article class="menu-card">
-            <div class="menu-card-img" role="img" aria-label="Foto pendiente">[ foto del platillo ]</div>
-            <div class="menu-card-body">
-              <h3>Medio pollo + guarnición</h3>
-              <p>Con arroz, frijoles charros o ensalada de col. Para uno con hambre.</p>
-              <span class="price">$149</span>
-            </div>
-          </article>
-          <article class="menu-card">
-            <div class="menu-card-img" role="img" aria-label="Foto pendiente">[ foto del platillo ]</div>
-            <div class="menu-card-body">
-              <h3>Paquete familiar</h3>
-              <p>Pollo entero, cuatro guarniciones, tortillas y refresco de 2 L.</p>
-              <span class="price">$389</span>
-            </div>
-          </article>
+    <!-- ===================== TIRA DE VALORES ===================== -->
+    <section class="values" aria-label="Nuestros valores">
+      <div class="container values-row">
+        <div class="value">
+          <span class="value-num">100%</span>
+          <span class="value-label">Ingredientes reales, sin conservadores</span>
         </div>
+        <div class="value">
+          <span class="value-num">0</span>
+          <span class="value-label">Freidoras — todo va al carbón o al horno</span>
+        </div>
+        <div class="value">
+          <span class="value-num">40&nbsp;min</span>
+          <span class="value-label">Del carbón a tu puerta, en promedio</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== MENÚ (scroll horizontal) ===================== -->
+    <section id="menu" class="menu">
+      <div class="container menu-head">
+        <div>
+          <p class="eyebrow">El menú</p>
+          <h2 class="section-title">Desliza y elige</h2>
+        </div>
+        <p class="section-intro">Cada platillo con sus calorías y macros. Menú placeholder — reemplazar con platillos y fotos reales.</p>
+      </div>
+
+      <!-- Carrusel con scroll horizontal -->
+      <div class="carousel" role="region" aria-label="Platillos, desliza horizontalmente">
+        <div class="carousel-track" id="carousel-track">
+
+          <article class="dish">
+            <div class="dish-img" role="img" aria-label="Foto pendiente">[ foto ]</div>
+            <div class="dish-body">
+              <div class="dish-top">
+                <h3>Bowl de pollo al carbón</h3>
+                <span class="dish-kcal">520 kcal</span>
+              </div>
+              <p class="dish-desc">Pechuga rostizada, arroz integral, aguacate, brócoli y salsa de la casa.</p>
+              <ul class="macros">
+                <li><span>Proteína</span><strong>48 g</strong></li>
+                <li><span>Carbs</span><strong>42 g</strong></li>
+                <li><span>Grasa</span><strong>16 g</strong></li>
+              </ul>
+              <span class="dish-price">$149</span>
+            </div>
+          </article>
+
+          <article class="dish">
+            <div class="dish-img" role="img" aria-label="Foto pendiente">[ foto ]</div>
+            <div class="dish-body">
+              <div class="dish-top">
+                <h3>Medio pollo + 2 guarniciones</h3>
+                <span class="dish-kcal">610 kcal</span>
+              </div>
+              <p class="dish-desc">Marinado 24 h al carbón, con ensalada de col y camote al horno.</p>
+              <ul class="macros">
+                <li><span>Proteína</span><strong>55 g</strong></li>
+                <li><span>Carbs</span><strong>38 g</strong></li>
+                <li><span>Grasa</span><strong>22 g</strong></li>
+              </ul>
+              <span class="dish-price">$169</span>
+            </div>
+          </article>
+
+          <article class="dish">
+            <div class="dish-img" role="img" aria-label="Foto pendiente">[ foto ]</div>
+            <div class="dish-body">
+              <div class="dish-top">
+                <h3>Wrap verde de pollo</h3>
+                <span class="dish-kcal">430 kcal</span>
+              </div>
+              <p class="dish-desc">Tortilla de espinaca, pollo desmenuzado, hummus, pepino y mix de hojas.</p>
+              <ul class="macros">
+                <li><span>Proteína</span><strong>34 g</strong></li>
+                <li><span>Carbs</span><strong>36 g</strong></li>
+                <li><span>Grasa</span><strong>14 g</strong></li>
+              </ul>
+              <span class="dish-price">$119</span>
+            </div>
+          </article>
+
+          <article class="dish">
+            <div class="dish-img" role="img" aria-label="Foto pendiente">[ foto ]</div>
+            <div class="dish-body">
+              <div class="dish-top">
+                <h3>Ensalada power</h3>
+                <span class="dish-kcal">380 kcal</span>
+              </div>
+              <p class="dish-desc">Mix de hojas, pollo al carbón, quinoa, betabel, nuez y vinagreta cítrica.</p>
+              <ul class="macros">
+                <li><span>Proteína</span><strong>32 g</strong></li>
+                <li><span>Carbs</span><strong>24 g</strong></li>
+                <li><span>Grasa</span><strong>18 g</strong></li>
+              </ul>
+              <span class="dish-price">$129</span>
+            </div>
+          </article>
+
+          <article class="dish">
+            <div class="dish-img" role="img" aria-label="Foto pendiente">[ foto ]</div>
+            <div class="dish-body">
+              <div class="dish-top">
+                <h3>Paquete familiar</h3>
+                <span class="dish-kcal">2400 kcal</span>
+              </div>
+              <p class="dish-desc">Pollo entero, cuatro guarniciones, tortillas de maíz nixtamalizado y salsas.</p>
+              <ul class="macros">
+                <li><span>Proteína</span><strong>180 g</strong></li>
+                <li><span>Carbs</span><strong>150 g</strong></li>
+                <li><span>Grasa</span><strong>90 g</strong></li>
+              </ul>
+              <span class="dish-price">$389</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- Controles del carrusel -->
+      <div class="container carousel-controls">
+        <button class="carousel-btn" data-dir="-1" aria-label="Anterior">←</button>
+        <button class="carousel-btn" data-dir="1" aria-label="Siguiente">→</button>
+      </div>
+    </section>
+
+    <!-- ===================== INGREDIENTES / SALUD ===================== -->
+    <section id="ingredientes" class="ingredients">
+      <div class="container ingredients-grid">
+        <div class="ingredients-copy">
+          <p class="eyebrow">Qué hay adentro</p>
+          <h2 class="section-title">Nada que no puedas pronunciar</h2>
+          <p class="section-intro">Compramos fresco cada mañana y cocinamos sin freír. Lo que ves en la etiqueta es lo que hay en el plato — así de simple.</p>
+          <a class="btn btn-dark" href="https://wa.me/5215500000000" target="_blank" rel="noopener">Pedir algo saludable</a>
+        </div>
+        <ul class="ingredients-list">
+          <li><span class="dot"></span> Pollo fresco, libre de hormonas añadidas</li>
+          <li><span class="dot"></span> Aceite de oliva, nunca aceites refinados</li>
+          <li><span class="dot"></span> Verduras de temporada, compradas el mismo día</li>
+          <li><span class="dot"></span> Granos integrales: arroz integral y quinoa</li>
+          <li><span class="dot"></span> Salsas hechas en casa, sin conservadores</li>
+          <li><span class="dot"></span> Cero azúcares añadidos escondidos</li>
+        </ul>
       </div>
     </section>
 
     <!-- ===================== CÓMO PEDIR ===================== -->
     <section id="pedir" class="order">
       <div class="container">
-        <h2 class="section-title">Cómo pedir</h2>
-        <p class="section-intro">Elige tu app favorita o escríbenos directo — el pedido directo siempre sale más barato.</p>
+        <p class="eyebrow">Cómo pedir</p>
+        <h2 class="section-title">Elige tu canal</h2>
+        <p class="section-intro">El pedido directo por WhatsApp siempre sale sin comisiones.</p>
         <div class="order-grid">
           <a class="order-card" href="https://wa.me/5215500000000" target="_blank" rel="noopener">
-            <div class="icon">💬</div>
-            <h3>WhatsApp</h3>
-            <p>Pedido directo, sin comisiones</p>
+            <span class="order-name">WhatsApp</span>
+            <span class="order-tag">Directo · sin comisiones</span>
           </a>
           <a class="order-card" href="#" target="_blank" rel="noopener">
-            <div class="icon">🛵</div>
-            <h3>Uber Eats</h3>
-            <p>[ enlace pendiente ]</p>
+            <span class="order-name">Uber Eats</span>
+            <span class="order-tag">[ enlace pendiente ]</span>
           </a>
           <a class="order-card" href="#" target="_blank" rel="noopener">
-            <div class="icon">🛵</div>
-            <h3>Rappi</h3>
-            <p>[ enlace pendiente ]</p>
+            <span class="order-name">Rappi</span>
+            <span class="order-tag">[ enlace pendiente ]</span>
           </a>
           <a class="order-card" href="#" target="_blank" rel="noopener">
-            <div class="icon">🛵</div>
-            <h3>DiDi Food</h3>
-            <p>[ enlace pendiente ]</p>
+            <span class="order-name">DiDi Food</span>
+            <span class="order-tag">[ enlace pendiente ]</span>
           </a>
         </div>
-      </div>
-    </section>
 
-    <!-- ===================== ZONA Y HORARIOS ===================== -->
-    <section id="info">
-      <div class="container">
-        <h2 class="section-title">Zona y horarios</h2>
-        <p class="section-intro">Cocinamos desde [ colonia / alcaldía ] y entregamos en un radio de [ X ] km.</p>
         <div class="info-grid">
           <div class="info-block">
             <h3>Horarios</h3>
             <ul>
-              <li><span>Lunes – Jueves</span><span>13:00 – 21:00</span></li>
-              <li><span>Viernes – Sábado</span><span>13:00 – 22:00</span></li>
+              <li><span>Lun – Jue</span><span>13:00 – 21:00</span></li>
+              <li><span>Vie – Sáb</span><span>13:00 – 22:00</span></li>
               <li><span>Domingo</span><span>13:00 – 20:00</span></li>
             </ul>
           </div>
@@ -176,9 +280,9 @@
     <!-- ===================== CTA FINAL ===================== -->
     <section class="cta">
       <div class="container">
-        <h2>¿Antojo? Está a un mensaje de distancia.</h2>
-        <p>Pide ahora y recibe en menos de 40 minutos.</p>
-        <a class="btn btn-primary" href="https://wa.me/5215500000000" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+        <h2>Comer bien no debería ser complicado.</h2>
+        <p>Pide ahora y recibe comida real en menos de 40 minutos.</p>
+        <a class="btn btn-accent" href="https://wa.me/5215500000000" target="_blank" rel="noopener">Pedir por WhatsApp</a>
       </div>
     </section>
 

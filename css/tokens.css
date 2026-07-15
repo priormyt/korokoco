@@ -14,18 +14,20 @@
    ========================================================================== */
 
 :root {
-  /* ----- COLOR / MARCA (placeholders: cálido "rostizado") --------------- */
-  --brand:        #e4572e;  /* naranja fuego — color principal */
-  --brand-dark:   #b23a1d;  /* hover / estados presionados */
-  --accent:       #f7b32b;  /* amarillo — detalles y highlights */
+  /* ----- COLOR / MARCA (minimalista: blanco, negro, acento amarillo) ---- */
+  --brand:        #111111;  /* negro — color principal (texto, botones) */
+  --brand-dark:   #000000;  /* hover / estados presionados */
+  --accent:       #f5d90a;  /* amarillo — único color de acento */
+  --accent-dark:  #d9be00;  /* amarillo hover */
 
   /* ----- COLOR / NEUTROS ------------------------------------------------ */
-  --ink:          #1d1a17;  /* texto principal / fondos oscuros */
-  --ink-soft:     #5c554e;  /* texto secundario */
-  --paper:        #fff8f0;  /* fondo claro (crema) */
-  --paper-alt:    #f6ede1;  /* fondo alterno para secciones */
-  --line:         #e8ddd0;  /* bordes sutiles */
-  --on-dark:      #fff8f0;  /* texto sobre fondos oscuros */
+  --ink:          #111111;  /* texto principal */
+  --ink-soft:     #6b6b6b;  /* texto secundario */
+  --paper:        #ffffff;  /* fondo principal (blanco puro) */
+  --paper-alt:    #f7f7f5;  /* fondo alterno, gris casi imperceptible */
+  --line:         #ececec;  /* bordes sutiles */
+  --on-dark:      #ffffff;  /* texto sobre fondos oscuros */
+  --on-accent:    #111111;  /* texto sobre el amarillo */
 
   /* ----- TIPOGRAFÍA ------------------------------------------------------
      Placeholders: Bricolage Grotesque (display) + Inter (texto).
@@ -34,19 +36,22 @@
   --font-body:    "Inter", system-ui, -apple-system, sans-serif;
 
   /* Escala tipográfica fluida (se adapta sola de móvil a desktop) */
-  --text-hero:    clamp(2.5rem, 7vw, 4.5rem);
-  --text-title:   clamp(1.8rem, 4vw, 2.6rem);
-  --text-sub:     clamp(1.1rem, 2vw, 1.3rem);
-  --text-body:    1rem;
+  --text-hero:    clamp(3rem, 9vw, 6.5rem);
+  --text-title:   clamp(2rem, 5vw, 3.5rem);
+  --text-sub:     clamp(1.15rem, 2vw, 1.4rem);
+  --text-body:    1.0625rem;
   --text-small:   0.875rem;
+  --text-tiny:    0.75rem;
 
-  /* ----- ESPACIADO Y FORMA ---------------------------------------------- */
-  --space-section: clamp(4rem, 10vw, 7rem);  /* separación entre secciones */
-  --container:     1100px;                   /* ancho máximo del contenido */
-  --radius:        16px;                     /* esquinas de tarjetas */
-  --radius-pill:   999px;                    /* botones */
-  --shadow:        0 10px 30px rgb(29 26 23 / 0.08);
+  /* ----- ESPACIADO Y FORMA (generoso, mucho aire) ----------------------- */
+  --space-section: clamp(6rem, 15vw, 11rem);  /* separación entre secciones */
+  --container:     1240px;                    /* ancho máximo del contenido */
+  --gutter:        clamp(1.5rem, 5vw, 4rem);  /* margen lateral */
+  --radius:        20px;                       /* esquinas de tarjetas */
+  --radius-lg:     28px;
+  --radius-pill:   999px;                      /* botones */
+  --shadow:        0 20px 50px rgb(17 17 17 / 0.07);
 
   /* ----- MOVIMIENTO ------------------------------------------------------ */
-  --transition:    180ms ease;
+  --transition:    220ms cubic-bezier(0.4, 0, 0.2, 1);
 }
