@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>KOROKOCO — Dark Kitchen · Pollo rostizado a domicilio</title>
+  <meta name="description" content="KOROKOCO es una dark kitchen de pollo rostizado y comida para llevar. Pide por WhatsApp, Uber Eats, Rappi o DiDi Food." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="KOROKOCO — Dark Kitchen" />
+  <meta property="og:description" content="Pollo rostizado y comida para llevar, directo a tu puerta." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://korokoco.com" />
+  <meta property="og:image" content="https://korokoco.com/img/og-image.png" />
+
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
+
+  <!-- ======= FUENTES (placeholder) =======
+       Al definir las fuentes finales, cambia este <link> y las variables
+       --font-display / --font-body en css/tokens.css. Nada más. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- SEO local: schema.org para restaurantes -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "KOROKOCO",
+    "url": "https://korokoco.com",
+    "servesCuisine": "Pollo rostizado",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Ciudad de México",
+      "addressCountry": "MX"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navegación principal">
+      <a class="nav-logo" href="#inicio">
+        <img src="img/logo.svg" alt="KOROKOCO" />
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menú">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#menu">Menú</a></li>
+        <li><a href="#pedir">Cómo pedir</a></li>
+        <li><a href="#info">Zona y horarios</a></li>
+        <li><a class="btn btn-primary" href="https://wa.me/5215500000000" target="_blank" rel="noopener">Pedir ahora</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="inicio">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero">
+      <div class="container">
+        <h1>Pollo rostizado,<br /><em>directo a tu puerta</em></h1>
+        <p>Somos una dark kitchen: cero mesas, cero filas. Solo pollo al carbón, guarniciones caseras y entrega rápida en tu zona.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://wa.me/5215500000000" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+          <a class="btn btn-ghost" href="#menu">Ver menú</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== MENÚ ===================== -->
+    <section id="menu">
+      <div class="container">
+        <h2 class="section-title">El menú</h2>
+        <p class="section-intro">Pocas cosas, bien hechas. Menú placeholder — reemplazar con platillos y fotos reales.</p>
+        <div class="menu-grid">
+          <article class="menu-card">
+            <div class="menu-card-img" role="img" aria-label="Foto pendiente">[ foto del platillo ]</div>
+            <div class="menu-card-body">
+              <h3>Pollo entero rostizado</h3>
+              <p>Marinado 24 h, al carbón, con tortillas hechas a mano y dos salsas.</p>
+              <span class="price">$249</span>
+            </div>
+          </article>
+          <article class="menu-card">
+            <div class="menu-card-img" role="img" aria-label="Foto pendiente">[ foto del platillo ]</div>
+            <div class="menu-card-body">
+              <h3>Medio pollo + guarnición</h3>
+              <p>Con arroz, frijoles charros o ensalada de col. Para uno con hambre.</p>
+              <span class="price">$149</span>
+            </div>
+          </article>
+          <article class="menu-card">
+            <div class="menu-card-img" role="img" aria-label="Foto pendiente">[ foto del platillo ]</div>
+            <div class="menu-card-body">
+              <h3>Paquete familiar</h3>
+              <p>Pollo entero, cuatro guarniciones, tortillas y refresco de 2 L.</p>
+              <span class="price">$389</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CÓMO PEDIR ===================== -->
+    <section id="pedir" class="order">
+      <div class="container">
+        <h2 class="section-title">Cómo pedir</h2>
+        <p class="section-intro">Elige tu app favorita o escríbenos directo — el pedido directo siempre sale más barato.</p>
+        <div class="order-grid">
+          <a class="order-card" href="https://wa.me/5215500000000" target="_blank" rel="noopener">
+            <div class="icon">💬</div>
+            <h3>WhatsApp</h3>
+            <p>Pedido directo, sin comisiones</p>
+          </a>
+          <a class="order-card" href="#" target="_blank" rel="noopener">
+            <div class="icon">🛵</div>
+            <h3>Uber Eats</h3>
+            <p>[ enlace pendiente ]</p>
+          </a>
+          <a class="order-card" href="#" target="_blank" rel="noopener">
+            <div class="icon">🛵</div>
+            <h3>Rappi</h3>
+            <p>[ enlace pendiente ]</p>
+          </a>
+          <a class="order-card" href="#" target="_blank" rel="noopener">
+            <div class="icon">🛵</div>
+            <h3>DiDi Food</h3>
+            <p>[ enlace pendiente ]</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ZONA Y HORARIOS ===================== -->
+    <section id="info">
+      <div class="container">
+        <h2 class="section-title">Zona y horarios</h2>
+        <p class="section-intro">Cocinamos desde [ colonia / alcaldía ] y entregamos en un radio de [ X ] km.</p>
+        <div class="info-grid">
+          <div class="info-block">
+            <h3>Horarios</h3>
+            <ul>
+              <li><span>Lunes – Jueves</span><span>13:00 – 21:00</span></li>
+              <li><span>Viernes – Sábado</span><span>13:00 – 22:00</span></li>
+              <li><span>Domingo</span><span>13:00 – 20:00</span></li>
+            </ul>
+          </div>
+          <div class="info-block">
+            <h3>Zona de entrega</h3>
+            <ul>
+              <li><span>[ Colonia 1 ]</span><span>envío gratis</span></li>
+              <li><span>[ Colonia 2 ]</span><span>envío $25</span></li>
+              <li><span>[ Colonia 3 ]</span><span>envío $35</span></li>
+            </ul>
+          </div>
+          <div class="info-block">
+            <h3>Contacto</h3>
+            <ul>
+              <li><span>WhatsApp</span><span>[ 55 0000 0000 ]</span></li>
+              <li><span>Instagram</span><span>[ @korokoco ]</span></li>
+              <li><span>Correo</span><span>[ hola@korokoco.com ]</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CTA FINAL ===================== -->
+    <section class="cta">
+      <div class="container">
+        <h2>¿Antojo? Está a un mensaje de distancia.</h2>
+        <p>Pide ahora y recibe en menos de 40 minutos.</p>
+        <a class="btn btn-primary" href="https://wa.me/5215500000000" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <img src="img/logo.svg" alt="KOROKOCO" />
+      <p>© <span id="year"></span> KOROKOCO · Dark kitchen · CDMX</p>
+      <a href="https://wa.me/5215500000000" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+/* ==========================================================================
+   KOROKOCO — DESIGN TOKENS
+   ==========================================================================
+   ESTE ES EL ÚNICO ARCHIVO QUE HAY QUE TOCAR PARA CAMBIAR LA MARCA.
+
+   Cuando tengan la identidad final:
+   1. Cambia los colores aquí.
+   2. Cambia los nombres de fuente aquí (y el <link> de Google Fonts
+      en index.html, está marcado con el comentario "FUENTES").
+   3. Reemplaza img/logo.svg e img/favicon.svg por los definitivos
+      (mismo nombre de archivo = cero cambios de código).
+
+   Nada más en el proyecto define colores ni fuentes directamente.
+   ========================================================================== */
+
+:root {
+  /* ----- COLOR / MARCA (placeholders: cálido "rostizado") --------------- */
+  --brand:        #e4572e;  /* naranja fuego — color principal */
+  --brand-dark:   #b23a1d;  /* hover / estados presionados */
+  --accent:       #f7b32b;  /* amarillo — detalles y highlights */
+
+  /* ----- COLOR / NEUTROS ------------------------------------------------ */
+  --ink:          #1d1a17;  /* texto principal / fondos oscuros */
+  --ink-soft:     #5c554e;  /* texto secundario */
+  --paper:        #fff8f0;  /* fondo claro (crema) */
+  --paper-alt:    #f6ede1;  /* fondo alterno para secciones */
+  --line:         #e8ddd0;  /* bordes sutiles */
+  --on-dark:      #fff8f0;  /* texto sobre fondos oscuros */
+
+  /* ----- TIPOGRAFÍA ------------------------------------------------------
+     Placeholders: Bricolage Grotesque (display) + Inter (texto).
+     Al cambiar de fuente, actualiza también el <link> en index.html. */
+  --font-display: "Bricolage Grotesque", system-ui, sans-serif;
+  --font-body:    "Inter", system-ui, -apple-system, sans-serif;
+
+  /* Escala tipográfica fluida (se adapta sola de móvil a desktop) */
+  --text-hero:    clamp(2.5rem, 7vw, 4.5rem);
+  --text-title:   clamp(1.8rem, 4vw, 2.6rem);
+  --text-sub:     clamp(1.1rem, 2vw, 1.3rem);
+  --text-body:    1rem;
+  --text-small:   0.875rem;
+
+  /* ----- ESPACIADO Y FORMA ---------------------------------------------- */
+  --space-section: clamp(4rem, 10vw, 7rem);  /* separación entre secciones */
+  --container:     1100px;                   /* ancho máximo del contenido */
+  --radius:        16px;                     /* esquinas de tarjetas */
+  --radius-pill:   999px;                    /* botones */
+  --shadow:        0 10px 30px rgb(29 26 23 / 0.08);
+
+  /* ----- MOVIMIENTO ------------------------------------------------------ */
+  --transition:    180ms ease;
+}
