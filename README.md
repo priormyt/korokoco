@@ -1,6 +1,6 @@
-# KOROKOCO — polloskokoroco.com
+# KOKOROCO — polloskokoroco.com
 
-Landing page para la dark kitchen **KOROKOCO** (pollo al horno, comida casera saludable). Sitio 100 % estático (HTML + CSS + JS vanilla, sin build step), hosteado en **GitHub Pages**. En vivo: https://polloskokoroco.com/
+Landing page para la dark kitchen **KOKOROCO** (pollo al horno, comida casera saludable). Sitio 100 % estático (HTML + CSS + JS vanilla, sin build step), hosteado en **GitHub Pages**. En vivo: https://polloskokoroco.com/
 
 ## Arquitectura
 

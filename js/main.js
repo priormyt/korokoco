@@ -1,4 +1,4 @@
-// KOROKOCO — interacciones mínimas. Sin dependencias.
+// KOKOROCO — interacciones mínimas. Sin dependencias.
 
 // ----- Menú móvil -----
 const toggle = document.querySelector(".nav-toggle");

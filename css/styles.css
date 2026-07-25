@@ -1,5 +1,5 @@
 /* ==========================================================================
-   KOROKOCO — ESTILOS
+   KOKOROCO — ESTILOS
    Este archivo solo consume variables de tokens.css.
    Para cambiar la marca NO edites esto: edita css/tokens.css.
    ========================================================================== */
@@ -362,6 +362,78 @@ section[id] { scroll-margin-top: 76px; }
   border-radius: 50%;
   background: var(--accent);
 }
+
+/* ----- Quiénes somos (misión, visión, valores) ----- */
+.about-intro {
+  max-width: 64ch;
+  margin-bottom: clamp(2.5rem, 6vw, 4rem);
+}
+
+.purpose-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: clamp(3rem, 7vw, 5rem);
+}
+@media (max-width: 820px) {
+  .purpose-grid { grid-template-columns: 1fr; }
+}
+
+.purpose-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: clamp(1.75rem, 3vw, 2.5rem);
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+/* El rótulo "Misión" / "Visión" se lee como etiqueta, no como título */
+.purpose-card h3 {
+  font-family: var(--font-body);
+  font-size: var(--text-tiny);
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-weight: 600;
+  color: var(--ink-soft);
+}
+.purpose-card p { font-size: var(--text-sub); }
+
+/* La misión va en acento: es la promesa principal de la marca */
+.purpose-card:first-child {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+.purpose-card:first-child h3 { color: color-mix(in srgb, var(--on-accent) 65%, transparent); }
+.purpose-card:first-child p { color: var(--on-accent); }
+
+.principles-title { font-size: 1.05rem; margin-bottom: 2rem; }
+
+.principles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: clamp(2rem, 4vw, 3rem);
+}
+
+.principle { display: flex; flex-direction: column; gap: 0.75rem; }
+
+/* Barra decorativa de acento (no texto, así no hay problema de contraste) */
+.principle::before {
+  content: "";
+  width: 34px;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--accent);
+}
+
+.principle h4 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.35rem;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+.principle p { color: var(--ink-soft); font-size: var(--text-small); }
 
 /* ----- Cómo pedir ----- */
 .order-grid {

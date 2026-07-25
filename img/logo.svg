@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 272 40" role="img" aria-label="KOROKOCO">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 272 40" role="img" aria-label="KOKOROCO">
   <!-- LOGO PLACEHOLDER — minimalista, negro con punto amarillo tipo acento.
        Reemplazar este archivo por el logo final manteniendo el mismo
        nombre (logo.svg) para no tocar código. -->
-  <text x="0" y="31" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="30" letter-spacing="1.5" fill="#111111">KOROKOCO</text>
+  <text x="0" y="31" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="30" letter-spacing="1.5" fill="#111111">KOKOROCO</text>
   <circle cx="262" cy="28" r="6" fill="#f5d90a"/>
 </svg>
